@@ -1,0 +1,421 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url(kepek/hatterkep.jpeg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: beige;
+}
+
+    main{
+    max-width: 900px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    background-color: #233E29;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    background-color: #95301C;
+}
+
+
+header>h1{
+    text-align: center;
+    color: white;
+}
+
+nav{
+    grid-area: nav;
+    border-radius: 5px;
+    height: 50px;
+    margin: 15px 0 15px 0;
+}
+
+nav ul li a{
+    font-weight: bold;
+    color: white; 
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    color: thistle;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-top: 12px;
+}
+
+nav ul li{
+    display: inline;
+    padding-right: 72px;
+}
+
+section{
+    color: black;
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "receptek dekoraciok zenek";
+}
+
+#receptek{
+    grid-area: receptek;
+    border-radius: 5px;
+    background-color: beige;
+    width: 275px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "aside3"
+    "article3";
+}
+
+#aside3{
+    grid-area: aside3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#article3{
+    grid-area: article3;
+    height: 200px;
+}
+
+#receptek>#aside3>img{
+    width: 250px;
+    border-radius: 5px;
+}
+
+#receptek>#article3>h3{
+    text-align: center;
+}
+
+#receptek>#article3>p{
+    padding: 5px;
+    text-align: justify;
+}
+
+#dekoraciok{
+    grid-area: dekoraciok;
+    border-radius: 5px;
+    background-color: beige;
+    width: 275px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "aside2"
+    "article2";
+}
+
+#aside2{
+    grid-area: aside2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#article2{
+    grid-area: article2;
+    height: 200px;
+}
+
+#dekoraciok>#aside2>img{
+    width: 235px;
+    border-radius: 5px;
+}
+
+#dekoraciok>#article2>h3{
+    text-align: center;
+}
+
+#dekoraciok>#article2>p{
+    padding: 5px;
+    text-align: justify;
+}
+
+#zenek{
+    grid-area: zenek;
+    border-radius: 5px;
+    background-color: beige;
+    width: 275px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "aside"
+    "article";
+}
+
+aside{
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#zenek>aside>img{
+    width: 250px;
+    border-radius: 5px;
+}
+
+article{
+    grid-area: article;
+    height: 200px;
+}
+
+#zenek>article>h3{
+    text-align: center;
+}
+
+#zenek>article>p{
+    padding: 5px;
+    text-align: justify;
+}
+
+footer{
+    margin-top: 10px;
+    grid-area: footer;
+    background-color: #95301C;
+    text-align: center;
+    color: white;
+}
+
+footer>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+/*masodik.html*/
+
+#main2{
+    max-width: 900px;
+    width: 90%;
+
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    
+    background-color: #233E29;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section2"
+    "footer";
+}
+
+#section2{
+    grid-area: section2;
+    color: black;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "tema";
+}
+
+#tema{
+    grid-area: tema;
+    background-color: beige;
+}
+
+#tema>.table>td{
+    height: 50px;
+}
+
+#mezes{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+#tema>h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#tema>h3{
+    padding-left: 10px;
+}
+
+#tema>ol{
+    list-style-position: inside;
+}
+
+#tema>ol>li{
+    margin-top: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+/*harmadik.html*/
+
+#main3{
+    max-width: 900px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    background-color: #233E29;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section3"
+    "footer";
+}
+
+#section3{
+    grid-area: section3;
+    background-color: beige;
+    color: black;
+}
+
+#section3>h2{
+    text-align: center;
+}
+
+#section3>video{
+    margin: 23.9px;
+    width: 400px;
+}
+
+@media all and (max-width:600px) {
+    nav{
+    grid-area: nav;
+    border-radius: 5px;
+    height: auto;
+    margin: 15px 0 15px 0;
+}
+
+    nav ul li a{
+    font-weight: bold;
+    color: white; 
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+    nav ul{
+    list-style-type: none;
+    margin-top: 12px;
+}
+
+    nav ul li{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+    section{
+    color: black;
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "receptek" 
+    "dekoraciok"
+    "zenek";
+}
+    #receptek{
+    grid-area: receptek;
+    border-radius: 5px;
+    background-color: beige;
+    width: 275px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "aside3"
+    "article3";
+}
+    #dekoraciok{
+    grid-area: dekoraciok;
+    border-radius: 5px;
+    background-color: beige;
+    width: 275px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "aside2"
+    "article2";
+}
+    #zenek{
+    grid-area: zenek;
+    border-radius: 5px;
+    background-color: beige;
+    width: 275px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "aside"
+    "article";
+}
+}
